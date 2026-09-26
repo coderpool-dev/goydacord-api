@@ -1,0 +1,21 @@
+<?php
+
+return [
+
+    'paths' => ['api/*', 'broadcasting/auth'],
+
+    'allowed_methods' => ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+
+    'allowed_origins' => explode(',', env('CORS_ALLOWED_ORIGINS', 'https://goidacord.ru,https://www.goidacord.ru,http://localhost:3000')),
+
+    'allowed_origins_patterns' => [],
+
+    'allowed_headers' => ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept', 'Upload-Offset'],
+
+    'exposed_headers' => [],
+
+    'max_age' => 3600,
+
+    'supports_credentials' => false,
+
+];

@@ -1,0 +1,6 @@
+services:
+  coturn:
+    volumes:
+      - ./turnserver.tls.conf:/etc/coturn/turnserver.conf:ro
+      - ./certs/fullchain.pem:/etc/coturn/certs/fullchain.pem:ro
+      - ./certs/privkey.pem:/etc/coturn/certs/privkey.pem:ro
